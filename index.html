@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — AI Powered</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <header class="hero">
+    <img class="hero-img" src="assets/hero.png" alt="hero image" />
+    <div class="hero-inner">
+      <h1>Alex Morgan — Design & AI</h1>
+      <p>Crafting minimal, fast, AI-assisted landing pages.</p>
+      <a class="btn" href="#projects">See Work</a>
+      <button id="open-chat" class="btn ghost">Chat with AI</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="projects-grid">
+      <h2>Featured Projects</h2>
+      <div class="card">
+        <h3>e-Commerce UI</h3>
+        <p>Full-stack checkout + admin dashboard.</p>
+      </div>
+      <div class="card">
+        <h3>Task App</h3>
+        <p>Minimal productivity app with AI suggestions.</p>
+      </div>
+    </section>
+
+    <section id="ai-section" class="chat-wrapper hidden">
+      <div class="chat">
+        <header><h3>AI Assistant</h3><button id="close-chat">✕</button></header>
+        <div id="messages" class="messages"></div>
+        <form id="chat-form">
+          <input id="prompt" placeholder="Ask the AI..." autocomplete="off"/>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Designer & AI integrator — specialised in landing pages and product pitches.</p>
+
+      <div class="skill">
+        <label>AI Integration</label>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Alex Morgan</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
